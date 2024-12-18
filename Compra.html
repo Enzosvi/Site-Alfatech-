@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>AlfaTech Mensalidade</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="Compra.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="topo">
+            <a href="index.html" class="a">
+            <img src="imagens/logo-icone.png" alt="">
+             <div class="alfa">
+            <h1>AlfaTech</h1>
+            <h2>Soluções em hospedagem</h2>
+            </a>
+        </div>
+            <div class="link-topo">
+                <a href="#informaçoes" >INFORMAÇÕES</a>
+                <a href="#planos">PLANOS</a>
+                <a href="Compra.html">PREÇOS</a>
+                <a href="#contato">CONTATO</a>
+            </div>
+        </header>
+        <body>
+
+            <div class="container">
+                <h1>Pagamento Mensal</h1>
+                <form action="/submit-payment" method="POST">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="amount">Valor</label>
+                    <input type="number" id="amount" name="amount" required>
+            
+                    <label for="card-number">Número do Cartão</label>
+                    <input type="text" id="card-number" name="card-number" required>
+            
+                    <label for="expiry-date">Data de Validade</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+            
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required>
+
+                    <label for="tipo">Tipo de Plano</label>
+                    <select name="plano" id="tipo">     
+                        <option value="" disabled selected hidden>Selecione</option>                   
+                        <option value="pessoal">Pessoal</option>
+                        <option value="pessoal">Profissional</option>
+                        <option value="pessoal">Empresarial</option>
+                        <option value="pessoal">BIG TECHS</option>
+                    </select>
+            
+                    <button type="submit">Pagar</button>
+                </form>
+            </div>
+        <div id="contato" class="container-contatos1">
+        <h2>Qualquer duvida <SPAn>todas</SPAn> nossas plataformas de contato estão abaixo</h2>
+        <a href="#"> <p>Telefone & Whatsapp: (21) 99999-5555</p></a>
+        <p>E-mail: suporte@alfatech.com</p>
+        <p>Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro</p>
+        <p>&copy; AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
+        
+        </div>
+        <footer>
+            <div class="container-copyright">
+              <p><span>Desenvolvido por</span> Enzo, Lucas, Jim e Gabriel</p>
+            </div>
+          </footer>
+            </body>
+</html>
+    
